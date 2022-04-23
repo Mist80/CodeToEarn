@@ -6,3 +6,4 @@ except:
     print("my error")
 else:
     print(myResponse.text)
+    pass
