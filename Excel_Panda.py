@@ -1,13 +1,13 @@
-from fileinput import filename
 import pandas as pd
-from requests import head
 
 myFileName="./1.xlsx"
 
 #打开excel文件
 file=pd.read_excel(myFileName)
 
+#文档的行数和列数
 print(file.shape)
+
 # 读取头两行
 print(file.head(2))
 print()
