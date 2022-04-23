@@ -1,0 +1,17 @@
+from fileinput import filename
+import pandas as pd
+from requests import head
+
+myFileName="./1.xlsx"
+
+file=pd.read_excel(myFileName)
+# print(file)
+print(type(file))
+print()
+print(file.shape)
+# print(file.columns)
+print(file.head(2))
+print("-----------------------")
+print(file.tail(2))
+#index=False，去掉DataFrame的索引
+file.to_excel("./2.xlsx",index=False)
