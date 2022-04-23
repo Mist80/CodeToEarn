@@ -1,5 +1,6 @@
 import bs4
 import requests
+import pandas as pd
 
 myURL="https://www.baidu.com"
 myPage=requests.get(myURL)
